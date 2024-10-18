@@ -3,6 +3,7 @@ import cv2
 import torch
 import os
 import time
+import numpy as np
 from PIL import Image
 from io import BytesIO
 
@@ -18,8 +19,8 @@ def download_image(url):
 # Load YOLOv5 model (you can use 'yolov5s.pt', 'yolov5m.pt', etc.)
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 
-# Set the camera URL (replace with the specific camera URL you want to use)
-camera_url = "https://cameras.alertcalifornia.org/path_to_image"  # Replace with actual image URL
+# Set the camera URL
+camera_url = "https://i0.wp.com/eos.org/wp-content/uploads/2024/07/wildfire.jpg?fit=1200%2C675&ssl=1" 
 
 # Main function
 def main():
@@ -38,12 +39,12 @@ def main():
             results.save()   # Save the results
 
             # Display the results (optional)
-            cv2.imshow("YOLOv5 Detection", results.imgs[0])
+            cv2.imshow("YOLOv5 Detection", results.ims[0])
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
         # Sleep for a while before fetching the next image
-        time.sleep(60)  # Adjust as necessary
+        time.sleep(20)  # Adjust as necessary
 
     cv2.destroyAllWindows()
 
@@ -51,14 +52,9 @@ if __name__ == "__main__":
     main()
 
 
-# Replace camera_url: Make sure to replace "https://cameras.alertcalifornia.org/path_to_image" with the actual image URL you want to analyze.
-
 # Object Detection: YOLOv5 will identify objects based on the pre-trained weights. If you want to specifically detect fire and smoke, consider fine-tuning the model with labeled data related to wildfires.
 
-# Loop: The script will continually fetch images every 60 seconds. Adjust the sleep time as needed.
+# Loop: The script will continually fetch images every 20 seconds. Adjust the sleep time as needed.
 
 # Displaying Results: The script will display the detected image in a window. Press 'q' to exit.
 
-# Environment: Ensure you run this script in an environment where OpenCV can create windows (not on a headless server).
-
-# Save the script to a Python file, for example detect_wildfires.py, and run it with: python detect_wildfires.py
