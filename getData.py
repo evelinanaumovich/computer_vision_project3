@@ -2,14 +2,14 @@ import requests
 
 # URL of the image you want to download
 count = 0;
-for i in range(1729258281, 1729275140, 72):
+
+for i in range(1729349997, 1729359124):
 	
 
     image_url = f'https://cameras.alertcalifornia.org/public-camera-data/Axis-SantiagoPeakCalOESN/1min/{i}.000000000.jpg'
-    image_url = f'https://cameras.alertcalifornia.org/public-camera-data/Axis-SantiagoPeakCalOESN/1min/{i+72}.000000000.jpg'
 
     # Local file path where you want to save the image
-    save_path = f'./imgs/img{i}.jpg'
+    save_path = f'./data/santiagoPeakNoFire/img{i}.jpg'
 
     # Send a GET request to the image URL
     response = requests.get(image_url)
