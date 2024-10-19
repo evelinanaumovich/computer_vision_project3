@@ -8,13 +8,15 @@ We implemented a program called getData.py and ran it over a span of 10 hours to
 # Step 2: Training
 To train our model we took out data and split it into test and train folders, both folders then had a sub devision of fire and no fire. Train is the images that we used to train our model with and Test is what we used to test out model. Train has 2200 images with fire and 328 without fire and out Test data has 628 images of fire and 94 without fire. 
 
-**Here are outputs that we got:**
+Our model training code is in detectFires.py. For our model we API we used YOLOv8. 
+
+We trained the model 5 seperate times for epocs all with around 85% accuracy. 
+
+**Here are the outputs that we got:**
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
-
-# Step 3: Implementation 
 
 # How To Run 
 In order to run our program you need to make sure to get set up in a virtual enviornment and download the requirements. 
