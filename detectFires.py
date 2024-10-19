@@ -2,13 +2,13 @@
 from ultralytics import YOLO
 
 # Load a model
-model = YOLO('yolov8n-cls.pt') # load a pretrained model (recommended for training)
+model = YOLO('yolov8n-cls.pt') 
 
 # Train the model
 model.train(data='./Images', epochs=5)
 
 # Validate the model
-metrics = model.val() # no arguments needed, dataset and settings remembered
+metrics = model.val()
 metrics.top1 # top1 accuracy
 metrics.top5 # top5 accuracy
 

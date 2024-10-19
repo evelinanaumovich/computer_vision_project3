@@ -28,7 +28,7 @@ def main():
             results.print() 
             
             # Check for fire detection
-            detected = any(x in results.names for x in ['fire', 'smoke', 'red', 'yellow']) 
+            detected = any(x in results.names for x in ['fire', 'smoke']) 
             if detected:
                 print(f"Fire detected in {filename}!")
             else:
