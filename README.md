@@ -13,7 +13,7 @@ Our model training code is in trainModel.py. For our model we API we used YOLOv8
 We trained the model 5 seperate times for epocs all with around 85% accuracy. 
 
 **Here are the outputs that we got:**
-![alt text](image.png)
+![alt text](./runs/classify/train4/val_batch0_labels.jpg)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
