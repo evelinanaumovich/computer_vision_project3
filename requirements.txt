@@ -312,7 +312,7 @@ spyder-kernels @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T
 SQLAlchemy @ file:///Users/cbousseau/work/recipes/ci_py311/sqlalchemy_1677934876727/work
 stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
 statsmodels @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_d39rlzrllo/croot/statsmodels_1689937269798/work
-sympy @ file:///Users/cbousseau/work/recipes/ci_py311_2/sympy_1678995976952/work
+sympy==1.13.1
 tables @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_81qnps6056/croot/pytables_1691621471831/work
 tabulate @ file:///Users/cbousseau/work/recipes/ci_py311/tabulate_1678003852126/work
 tblib @ file:///Users/ktietz/demo/mc3/conda-bld/tblib_1629402031467/work
@@ -329,15 +329,19 @@ tokenizers @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs
 toml @ file:///tmp/build/80754af9/toml_1616166611790/work
 tomlkit @ file:///Users/cbousseau/work/recipes/ci_py311/tomlkit_1677911131859/work
 toolz @ file:///Users/cbousseau/work/recipes/ci_py311/toolz_1677925870232/work
+torch==2.5.0
+torchvision==0.20.0
 tornado @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_28d93aezp2/croot/tornado_1690848278715/work
 tqdm @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ac7zic_tin/croot/tqdm_1679561870178/work
 traitlets @ file:///Users/cbousseau/work/recipes/ci_py311/traitlets_1677911650502/work
 transformers @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_70qewmwi_e/croot/transformers_1693308325746/work
 Twisted @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_3c_lnc4s5c/croot/twisted_1683796895946/work
-typing_extensions @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1fdywrbp_3/croot/typing_extensions_1690297474455/work
+typing_extensions==4.12.2
 tzdata @ file:///croot/python-tzdata_1690578112552/work
 uc-micro-py @ file:///Users/cbousseau/work/recipes/ci_py311/uc-micro-py_1677963537430/work
 ujson @ file:///Users/cbousseau/work/recipes/ci_py311/ujson_1677927397272/work
+ultralytics==8.3.16
+ultralytics-thop==2.0.9
 Unidecode @ file:///tmp/build/80754af9/unidecode_1614712377438/work
 urllib3 @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e9usuw__8i/croot/urllib3_1686166332689/work
 virtualenv==20.27.0
