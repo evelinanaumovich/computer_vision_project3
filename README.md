@@ -1,6 +1,5 @@
 # Wildfire Classification 
-For this project we took videos that were recorded by ALERTCalifornia from two spots, Blue Ridge 1 and Santiago Peak 2.
-We split out data into two classes in order to train our model, fire and no fire. We are using YOLO as our model in order to classify these images. 
+The task at hand is to detect images that have current wildfires. For this project we took videos that were recorded by ALERTCalifornia from two spots, Blue Ridge 1 and Santiago Peak 2. We split our data into two classes in order to train our model, fire and no fire. We are using YOLO as our model in order to classify these images. 
 
 # Step 1: Gathering Data
 We implemented a program called getData.py and ran it over a span of 10 hours to get enough data for both the cameras. This data was then put in data/coffeePotNoFire and data/santiagoPeakNoFire. For our fire videos we found the same webcams that had fire from youtube and uploaded the images that we took to data/coffeePotFire and data/santiagoPeakFire.
@@ -20,4 +19,7 @@ We trained the model 5 seperate times for epocs all with around 85% accuracy.
 
 # How To Run 
 In order to run our program you need to make sure to get set up in a virtual enviornment and download the requirements. 
+
+# Conclusion 
+In our model we had to use videos from previous fires due to the fact that California is not in wildfire season at the moment. The images that we used for fire detection contained either fire and/or smoke. In the future it is possible for us to continue to develop the model to the point where it could constantly scan the live feeds to check for fire detection 24/7, this would automate the process of looking for a wildfire in the ALERTCalifornia faster and make detection much quicker which could ultimatley lead to helping put the fire out before it does a lot of damage. 
  
