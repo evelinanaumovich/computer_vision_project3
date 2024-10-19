@@ -4,7 +4,8 @@ We split out data into two classes in order to train our model, fire and no fire
 live camera feeds in order to automate the detection of possible wildfires. 
 
 # Step 1: Gathering Data
-We implemented a program called getData.py and ran it over a span of 10 hours to get enough data for both the cameras. This would take screenshots from a live camera feed every couple seconds. For ease of training and simplification we chose to only train and test our model on images taken during the day, as the camera were not made for night and all nighttime images were black and white. For our fire videos we found the same webcams that had fire from youtube and uploaded the images using another python script.
+We implemented a program called getData.py and ran it over a span of 10 hours to get enough data for both the cameras. This would take screenshots from a live camera feed every couple seconds. For ease of training and simplification we chose to only train and test our model on images taken during the day, as the camera were not made for night and all nighttime images were black and white. To get a sufficient amount of data for positive fire images, we found data on YouTube from the same two cameras from previous fires earlier this year. That way our training data was consistent (Same camera/position) for data with and without fires.
+
 # Step 2: Training
 To train our model we took out data and split it into test and train folders, both folders then had a sub devision of fire and no fire. Train is the images that we used to train our model with and Test is what we used to test out model. Train has 2200 images with fire and 328 without fire and out Test data has 628 images of fire and 94 without fire. 
 
