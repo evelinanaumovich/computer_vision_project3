@@ -25,19 +25,20 @@ def main():
             results = model(image)
             
             # Print results
-            results.print()  # Print detected objects
+            results.print() 
             
             # Check for fire detection
-            detected = any(x in results.names for x in ['fire', 'smoke'])  # Modify as needed based on your model
+            detected = any(x in results.names for x in ['fire', 'smoke', 'red', 'yellow']) 
             if detected:
                 print(f"Fire detected in {filename}!")
             else:
                 print(f"No fire detected in {filename}.")
             
+            cv2.waitKey(1000)
             # Display the results
-            cv2.imshow("YOLOv5 Detection", np.squeeze(results.render()))
-            if cv2.waitKey(1000) & 0xFF == ord('q'):  # Display each image for 1 second
-                break
+            # cv2.imshow("YOLOv5 Detection", np.squeeze(results.render()))
+            # if cv2.waitKey(1000) & 0xFF == ord('q'):  # Display each image for 1 second
+            #     break
 
     cv2.destroyAllWindows()
 
