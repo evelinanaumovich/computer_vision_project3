@@ -7,7 +7,8 @@ We implemented a program called getData.py and ran it over a span of 10 hours to
 
 # Step 2: Training
 To train our model we took out data and split it into test and train folders, both folders then had a sub devision of fire and no fire. Train is the images that we used to train our model with and Test is what we used to test out model. Train has 2200 images with fire and 328 without fire and out Test data has 628 images of fire and 94 without fire. 
-Here are outputs that we got: 
+
+**Here are outputs that we got:**
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
